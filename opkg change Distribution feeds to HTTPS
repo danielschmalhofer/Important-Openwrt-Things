@@ -1,0 +1,10 @@
+##
+# Change the opkg Distribution feeds from http to https
+##
+opkg update
+opkg install wget
+opkg install ca-certificates
+opkg install libustream-openssl
+vi /etc/opkg/distfeeds.conf
+:%s/http/https/g
+opkg update
