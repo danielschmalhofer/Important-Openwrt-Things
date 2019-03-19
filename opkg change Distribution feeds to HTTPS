@@ -7,4 +7,5 @@ opkg install ca-certificates
 opkg install libustream-openssl
 vi /etc/opkg/distfeeds.conf
 :%s/http/https/g
+:x
 opkg update
