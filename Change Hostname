@@ -1,0 +1,3 @@
+uci set system.@system[0].hostname='NewHostName'
+uci commit system
+/etc/init.d/system reload
